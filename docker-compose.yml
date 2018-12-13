@@ -1,0 +1,11 @@
+version:  '3'
+services:
+  scipy-notebook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/home/jovyan
+    ports:
+      - 8888:8888
+    container_name: scipy_notebook 
